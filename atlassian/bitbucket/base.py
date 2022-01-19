@@ -181,4 +181,8 @@ class BitbucketBase(AtlassianRestAPI):
             api_root=self.api_root,
             api_version=self.api_version,
             timeformat_lambda=self.timeformat_lambda,
+            backoff_and_retry = self.backoff_and_retry,
+            retry_error_matches = self.retry_error_matches,
+            max_backoff_seconds = self.max_backoff_seconds,
+            max_backoff_retries = self.max_backoff_retries,
         )
